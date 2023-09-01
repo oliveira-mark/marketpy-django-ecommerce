@@ -1,10 +1,16 @@
 {% extends 'base.html' %}
 
 {% block content %}
-  <h2>Produsts List</h2>
-  <ul>
+  <div class="row">
+    <div class="col_12">
+      <h2>Produsts List</h2>
+    </div>
+  </div>
+  <div class="row">
     {% for product in products %}
-      <li>{{ product.name }} - R$ {{ product.price }}</li>
+      <div class="col_4">
+        {% include 'product/components/product_card.html' %}
+      </div>
     {% endfor %}
-  </ul>
+  </div>
 {% endblock %}
