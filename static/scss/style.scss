@@ -1,1 +1,41 @@
-/*  MarketPy project's styles file  */
+/* MarketPy project's styles file */
+
+.marketpy_nav {
+  background-color: #fbfbfb;
+  border-bottom: 1px #fff solid;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.marketpy_menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  li {
+    display: inline;
+
+    a {
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.marketpy_brand {
+  max-width: 150px;
+  width: 100%;
+  object-fit: contain;
+}
+
+.marketpy_card_product {
+  max-width: 350px;
+
+  img {
+    width: 100%;
+  }
+}

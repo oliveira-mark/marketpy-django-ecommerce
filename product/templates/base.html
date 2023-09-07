@@ -3,31 +3,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% block title %}MarketPy{% endblock %}</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% block title %}MarketPy{% endblock %}</title>
 
-    <link rel="stylesheet" type="text/css" href="{% static 'css/global.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'css/global.css' %}">
 
 </head>
 <body>
-    <header>
-        <h1>MarketPy</h1>
-        <nav>
-            <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/product/products/">Products</a></li>
+  <header>
+    <div class="marketpy_container_fluid">
+      <div class="marketpy_row">
+        <div class="marketpy_col_lg_12">
+          <nav class="marketpy_nav">
+
+            <img src="{% static 'img/img.png' %}" alt="Logotype MarketPy" class="marketpy_brand">
+
+            <ul class="marketpy_menu">
+              <li><a href="/">Home</a></li>
+              <li><a href="/product/products/">Products</a></li>
             </ul>
-        </nav>
-    </header>
+
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
     
     <main>
-        {% block content %}
-        {% endblock %}
+      {% block content %}
+      {% endblock %}
     </main>
     
     <footer>
-        <p>&copy; 2023 MarketPy.</p>
+      <p>&copy; 2023 MarketPy.</p>
     </footer>
 </body>
 </html>
