@@ -5,6 +5,6 @@
     <p>Price: $ {{ product.price }}</p>
   </div>
   <div class="overlay">
-    <a href="#">Buy Now!</a>
+    <a href="{% url 'product_detail' slug=product.slug %}">Buy Now!</a>
   </div>
 </div>
