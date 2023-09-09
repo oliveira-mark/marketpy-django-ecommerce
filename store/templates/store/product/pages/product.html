@@ -1,14 +1,14 @@
 {% extends 'base.html' %}
 
 {% block content %}
-  <div class="row">
-    <div class="col_12">
+  <div class="marketpy_row">
+    <div class="marketpy_col_12">
       <h2>Produsts List</h2>
     </div>
   </div>
-  <div class="row">
+  <div class="marketpy_row">
     {% for product in products %}
-      <div class="col_4">
+      <div class="marketpy_col_4">
         {% include 'product/components/product_card.html' %}
       </div>
     {% endfor %}

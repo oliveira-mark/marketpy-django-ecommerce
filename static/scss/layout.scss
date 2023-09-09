@@ -11,9 +11,11 @@ Index
 
 */
 
-html {
+body, html {
   box-sizing: border-box;
   -ms-overflow-style: scrollbar;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 *,
@@ -51,6 +53,12 @@ html {
   @media (min-width: 1200px) {
     .marketpy_container {
       max-width: 1140px;
+    }
+  }
+
+  @media (min-width: 1450px) {
+    .marketpy_container {
+      max-width: 1450px;
     }
   }
   

@@ -7,6 +7,8 @@ SECRET_KEY = 'django-insecure-e=f3dp#w9as@4za6z9t^+63s2)cw3xe4n8brai@pvi77u=$v58
 
 DEBUG = True
 
+CACHEOPS_ENABLED = False
+
 ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
@@ -18,6 +20,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'product',
     'django_sass',
+    'store',
 ]
 
 MIDDLEWARE = [
