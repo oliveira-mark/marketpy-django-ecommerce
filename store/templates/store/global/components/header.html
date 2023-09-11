@@ -14,330 +14,114 @@
     <div class="marketpy_menubar">
       <div class="marketpy_feature_menu">
         <div class="marketpy_container">
-          <a href="./">
-            <img src="{% static 'img/img.png' %}" alt="Logotype MarketPy" class="marketpy_brand">
-          </a>
-          <form action="">
-            <input type="text" placeholder="O que você procura?">
-            <button><i class="fi fi-rr-search"></i></button>
-          </form>
-          <a href="">
-            <i class="fi fi-rr-angle-small-right"></i>
-            Contact Us
-          </a>
-          <a href="">
-            <i class="fi fi-rr-angle-small-right"></i>
-            My Account
-          </a>
-          <a href="">
-            <i class="fi fi-rr-angle-small-right"></i>
-            My Cart
-          </a>
-        </div>
-      </div>
-      <div class="marketpy_links_menu">
-        <div class="marketpy_container">
-          <nav class="navbar navbar-expand-lg static-top">
-            <button>
-              <i class="fas fa-bars"></i>
-            </button>
-            <div class="" id="menuMobile">
-              <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                  <a class="nav-link" onclick="toggleDiv('mega-menu-01')" href="#">Graduação <i class="fi fi-rr-angle-small-down"></i></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" onclick="toggleDiv('mega-menu-02')" href="#">Pós-Graduação e Pesquisa <i class="fi fi-rr-angle-small-down"></i></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" onclick="toggleDiv('mega-menu-03')" href="#">Extenção e Serviços em Saúde <i class="fi fi-rr-angle-small-down"></i></a>
-                </li>
-              </ul>
+          <div class="marketpy_row">
+            <div class="marketpy_col_lg_2">
+              <a href="./" class="marketpy_brand">
+                <!--<img src="{% static 'img/img.png' %}" alt="Logotype MarketPy">-->
+                <h6>Market<span>Py</span></h6>
+              </a>
             </div>
-          </nav>
-          <div class="mega-menu" id="mega-menu-01">
-            <div class="row">
-              <div class="col-lg-8">
-                <div class="row">
-                  <div class="col-lg-12">
-                    <h3>Presensial</h3>
-                  </div>
-                  <div class="col-lg-6">
-                    <a href="#" class="mega-menu-link">
-                      <img src="./assets/img/icones/cursos/medicina.png" alt="Medicina">
-                      <div>
-                        <h6>Medicina</h6>
-                        <p>Aliquid nisi dolorum laborum dict.</p>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="col-lg-6">
-                    <a href="#" class="mega-menu-link">
-                      <img src="./assets/img/icones/cursos/biomedicina.png" alt="Biomedicina">
-                      <div>
-                        <h6>Biomedicina</h6>
-                        <p>Aliquid nisi dolorum laborum dict.</p>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="col-lg-6">
-                    <a href="#" class="mega-menu-link">
-                      <img src="./assets/img/icones/cursos/enfermagem.png" alt="Enfermagem">
-                      <div>
-                        <h6>Enfermagem</h6>
-                        <p>Aliquid nisi dolorum laborum dict.</p>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="col-lg-6">
-                    <a href="#" class="mega-menu-link">
-                      <img src="./assets/img/icones/cursos/farmacia.png" alt="Farmácia">
-                      <div>
-                        <h6>Farmácia</h6>
-                        <p>Aliquid nisi dolorum laborum dict.</p>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="col-lg-6">
-                    <a href="#" class="mega-menu-link">
-                      <img src="./assets/img/icones/cursos/psicologia.png" alt="Psicologia">
-                      <div>
-                        <h6>Psicologia</h6>
-                        <p>Aliquid nisi dolorum laborum dict.</p>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="col-lg-6">
-                    <a href="#" class="mega-menu-link">
-                      <img src="./assets/img/icones/cursos/educacao-fisica.png" alt="Educação Fisica">
-                      <div>
-                        <h6>Educação Fisica</h6>
-                        <p>Aliquid nisi dolorum laborum dict.</p>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="col-lg-6">
-                    <a href="#" class="mega-menu-link">
-                      <img src="./assets/img/icones/cursos/fisioterapia.png" alt="Fisioterapia">
-                      <div>
-                        <h6>Fisioterapia</h6>
-                        <p>Aliquid nisi dolorum laborum dict.</p>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="col-lg-6">
-                    <a href="#" class="mega-menu-link">
-                      <img src="./assets/img/icones/cursos/nutricao.png" alt="Nutrição">
-                      <div>
-                        <h6>Nutrição</h6>
-                        <p>Aliquid nisi dolorum laborum dict.</p>
-                      </div>
-                    </a>
-                  </div>
+            <div class="marketpy_col_lg_4">
+              <form action="">
+                <input type="text" placeholder="O que você procura?">
+                <button><i class="fi fi-rr-search"></i></button>
+              </form>
+            </div>
+            <div class="marketpy_col_lg_6">
+              <div class="marketpy_btn_menu_light" href="#" onclick="toggleDiv('dropdown_support')">
+                <i class="fi fi-rr-info"></i>
+                Help and Support
+
+                <div class="marketpy_menu_dropdown" id="dropdown_support">
+                  <p><strong>Support On-line 24/7</strong></p>
+                  <a href="">
+                    <i class="fi fi-rr-phone-call"></i>
+                    +01 423 2353-2344
+                  </a>
+                  <a href="">
+                    <i class="fi fi-rr-envelope"></i>
+                    contact@marketpy.com
+                  </a>
+                  <a href="">
+                    <i class="fi fi-rr-browser"></i>
+                    Contact Form
+                  </a>
+
+                  <hr>
+                  <p><strong>Return and Exchange Policy</strong></p>
+                  <a href="">
+                    <i class="fi fi-rr-shuffle"></i>
+                    Access exchange page
+                  </a>
+
+                  <hr>
+                  <p><strong>Opening Hours</strong></p>
+                  <p>Monday to Friday from 9:00 to 18:00</p>
+
                 </div>
+
               </div>
-              <div class="col-lg-4">
-                <h3>EAD (Educação a Distância)</h3>
-                <a href="#" class="mega-menu-link">
-                  <img src="./assets/img/icones/cursos/estetica-e-cosmetico.png" alt="Estético e Coméstico">
-                  <div>
-                    <h6>Estético e Coméstico</h6>
-                    <p>Aliquid nisi dolorum laborum dict.</p>
-                  </div>
-                </a>
-                <a href="#" class="mega-menu-link">
-                  <img src="./assets/img/icones/cursos/rh.png" alt="Recursos Humanos">
-                  <div>
-                    <h6>Recursos Humanos</h6>
-                    <p>Aliquid nisi dolorum laborum dict.</p>
-                  </div>
-                </a>
-                <a href="#" class="mega-menu-link">
-                  <img src="./assets/img/icones/cursos/ads.png" alt="Análise e Desemvolvimento de Sistemas">
-                  <div>
-                    <h6>Análise e Desemvolvimento de Sistemas</h6>
-                    <p>Aliquid nisi dolorum laborum dict.</p>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="mega-menu" id="mega-menu-02">
-            <div class="row">
-              <div class="col-lg-3">
-                <h3>Especialização</h3>
-                <a href="#" class="mega-menu-link">
-                  <div>
-                    <h6>EAD</h6>
-                    <p>Aliquid nisi dolorum laborum dict.</p>
-                  </div>
-                </a>
-                <a href="#" class="mega-menu-link">
-                  <div>
-                    <h6>Presencial</h6>
-                    <p>Aliquid nisi dolorum laborum dict.</p>
-                  </div>
-                </a>
-                <a href="#" class="mega-menu-link">
-                  <div>
-                    <h6>Online Ao Vivo</h6>
-                    <p>Aliquid nisi dolorum laborum dict.</p>
-                  </div>
-                </a>
-              </div>
-              <div class="col-lg-3">
-                <h3>Mestrado e Doutorado</h3>
-                <a href="#" class="mega-menu-link">
-                  <div>
-                    <h6>Colocar link aqui!</h6>
-                    <p>Aliquid nisi dolorum laborum dict.</p>
-                  </div>
-                </a>
-                <a href="#" class="mega-menu-link">
-                  <div>
-                    <h6>Colocar link aqui!</h6>
-                    <p>Aliquid nisi dolorum laborum dict.</p>
-                  </div>
-                </a>
-                <a href="#" class="mega-menu-link">
-                  <div>
-                    <h6>Colocar link aqui!</h6>
-                    <p>Aliquid nisi dolorum laborum dict.</p>
-                  </div>
-                </a>
-              </div>
-              <div class="col-lg-3">
-                <h3>Residência</h3>
-                <a href="#" class="mega-menu-link">
-                  <div>
-                    <h6>Colocar link aqui!</h6>
-                    <p>Aliquid nisi dolorum laborum dict.</p>
-                  </div>
-                </a>
-                <a href="#" class="mega-menu-link">
-                  <div>
-                    <h6>Colocar link aqui!</h6>
-                    <p>Aliquid nisi dolorum laborum dict.</p>
-                  </div>
-                </a>
-                <a href="#" class="mega-menu-link">
-                  <div>
-                    <h6>Colocar link aqui!</h6>
-                    <p>Aliquid nisi dolorum laborum dict.</p>
-                  </div>
-                </a>
-              </div>
-              <div class="col-lg-3">
-                <h3>Pesquisa</h3>
-                <a href="#" class="mega-menu-link">
-                  <div>
-                    <h6>PENSA – Pesquisa de Ensino na Saúde</h6>
-                    <p>Aliquid nisi dolorum laborum dict.</p>
-                  </div>
-                </a>
-                <a href="#" class="mega-menu-link">
-                  <div>
-                    <h6>Revistas</h6>
-                    <p>Aliquid nisi dolorum laborum dict.</p>
-                  </div>
-                </a>
-                <a href="#" class="mega-menu-link">
-                  <div>
-                    <h6>Mestrado e Doutorado</h6>
-                    <p>Aliquid nisi dolorum laborum dict.</p>
-                  </div>
-                </a>
-                <a href="#" class="mega-menu-link">
-                  <div>
-                    <h6>Iniciação Científica</h6>
-                    <p>Aliquid nisi dolorum laborum dict.</p>
-                  </div>
-                </a>
-                <a href="#" class="mega-menu-link">
-                  <div>
-                    <h6>Comitê de Ética e Pesquisa</h6>
-                    <p>Aliquid nisi dolorum laborum dict.</p>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="mega-menu" id="mega-menu-03">
-            <div class="row">
-              <div class="col-lg-8">
-                <div class="row">
-                  <div class="col-lg-4 mb-4">
-                    <h3>Curso de Extensão</h3>
-                    <a href="#" class="mega-menu-link">
-                      <div>
-                        <h6>Colocar link aqui!</h6>
-                        <p>Aliquid nisi dolorum laborum dict.</p>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="col-lg-4 mb-4">
-                    <h3>Prestação de Serviços em Saúde</h3>
-                    <a href="#" class="mega-menu-link">
-                      <div>
-                        <h6>Colocar link aqui!</h6>
-                        <p>Aliquid nisi dolorum laborum dict.</p>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="col-lg-4 mb-4">
-                    <h3>Projetos de Extensão</h3>
-                    <a href="#" class="mega-menu-link">
-                      <div>
-                        <h6>Colocar link aqui!</h6>
-                        <p>Aliquid nisi dolorum laborum dict.</p>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="col-lg-4 mb-4">
-                    <h3>Ligas Acadêmicas</h3>
-                    <a href="#" class="mega-menu-link">
-                      <div>
-                        <h6>Colocar link aqui!</h6>
-                        <p>Aliquid nisi dolorum laborum dict.</p>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="col-lg-4 mb-4">
-                    <h3>Eventos</h3>
-                    <a href="#" class="mega-menu-link">
-                      <div>
-                        <h6>Colocar link aqui!</h6>
-                        <p>Aliquid nisi dolorum laborum dict.</p>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="col-lg-4 mb-4">
-                    <h3>Curricularização</h3>
-                    <a href="#" class="mega-menu-link">
-                      <div>
-                        <h6>Colocar link aqui!</h6>
-                        <p>Aliquid nisi dolorum laborum dict.</p>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="col-lg-4 mb-4">
-                    <h3>Resoluções</h3>
-                    <a href="#" class="mega-menu-link">
-                      <div>
-                        <h6>Colocar link aqui!</h6>
-                        <p>Aliquid nisi dolorum laborum dict.</p>
-                      </div>
-                    </a>
-                  </div>
+
+              <div class="marketpy_btn_menu_light" href="#" onclick="toggleDiv('dropdown_account')">
+                <i class="fi fi-rr-user"></i>
+                My Account
+
+                <div class="marketpy_menu_dropdown" id="dropdown_account">
+                  <p><strong>Hello, Marcos! Goodnight :&rpar;</strong></p>
+                  <a href="">
+                    <i class="fi fi-rr-user"></i>
+                    My Profile
+                  </a>
+                  <a href="">
+                    <i class="fi fi-rr-tags"></i>
+                    My Orders
+                  </a>
+                  <a href="">
+                    <i class="fi fi-rr-exit"></i>
+                    Logout
+                  </a>
+
                 </div>
+
               </div>
-              <div class="col-lg-4">
-                <h3>Matrículas Abertas</h3>
-                <img src="./assets/img/img.png" alt="Img Default">
+
+              <div class="marketpy_btn_menu_light" href="#" onclick="toggleDiv('dropdown_cart')">
+                <i class="fi fi-rr-shopping-cart"></i>
+
+                <div class="marketpy_menu_dropdown" id="dropdown_cart">
+                  <p><strong>Items in your shopping cart:</strong></p>
+                  <a href="">
+                    <img src="{% static 'img/img.png' %}" alt="Logotype MarketPy">
+                    <div>
+                      <h5>T-shirt Caro Lines</h5>
+                      <p>Price: <strong>$ 84.00</strong></p>
+                    </div>
+                  </a>
+                  <a href="">
+                    <img src="{% static 'img/img.png' %}" alt="Logotype MarketPy">
+                    <div>
+                      <h5>T-shirt Caro Lines</h5>
+                      <p>Price: <strong>$ 84.00</strong></p>
+                    </div>
+                  </a>
+                  <a href="">
+                    <img src="{% static 'img/img.png' %}" alt="Logotype MarketPy">
+                    <div>
+                      <h5>T-shirt Caro Lines</h5>
+                      <p>Price: <strong>$ 84.00</strong></p>
+                    </div>
+                  </a>
+
+                  <hr>
+                  <p>Total cart value: <strong>$ 252.00</strong></p>
+
+                </div>
+
               </div>
             </div>
           </div>
         </div>
+        
       </div>
     </div>
     
