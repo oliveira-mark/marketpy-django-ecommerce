@@ -121,7 +121,129 @@
             </div>
           </div>
         </div>
-        
+      </div>
+    </div>
+
+    <div class="marketpy_menucategory">
+      <div class="marketpy_category_menu">
+        <div class="marketpy_container">
+          <div class="marketpy_row">
+            <div class="marketpy_col_lg_12">
+
+              <div class="marketpy_btn_menu_light" href="#" onclick="toggleDiv('dropdown_category_01')">
+                <i class="fi fi-rr-badge-percent"></i>
+                Trending Tech
+                <i class="fi fi-rr-angle-small-down"></i>
+
+                <div class="marketpy_menu_dropdown" id="dropdown_category_01">
+                  <a href="">Shop All New & Trending</a>
+                  <a href="">New PC Gaming</a>
+                  <a href="">New Chromebooks</a>
+                  <a href="">New Desktop Computers</a>
+                  <a href="">Electronics</a>
+                </div>
+              </div>
+
+              <div class="marketpy_btn_menu_light" href="#" onclick="toggleDiv('dropdown_category_02')">
+                <i class="fi fi-rr-screen"></i>
+                TVs
+                <i class="fi fi-rr-angle-small-down"></i>
+
+                <div class="marketpy_menu_dropdown" id="dropdown_category_02">
+                  <a href="">TVs by Size</a>
+                  <a href="">Smart TVs</a>
+                  <a href="">Roku TVs</a>
+                  <a href="">Streaming</a>
+                  <a href="">TV Mounts & Accessories</a>
+                  <a href="">Home Audio & Theater</a>
+                </div>
+              </div>
+
+              <div class="marketpy_btn_menu_light" href="#" onclick="toggleDiv('dropdown_category_03')">
+                <i class="fi fi-rr-music"></i>
+                Home Theater
+                <i class="fi fi-rr-angle-small-down"></i>
+
+                <div class="marketpy_menu_dropdown" id="dropdown_category_03">
+                  <a href="">Sound Bars</a>
+                  <a href="">Projectors</a>
+                  <a href="">DVD & Blu-Ray Players</a>
+                  <a href="">Portable Audio</a>
+                  <a href="">Bluetooth Speakers</a>
+                </div>
+              </div>
+
+              <div class="marketpy_btn_menu_light" href="#" onclick="toggleDiv('dropdown_category_04')">
+                <i class="fi fi-rr-home-location"></i>
+                Smart Home
+                <i class="fi fi-rr-angle-small-down"></i>
+
+                <div class="marketpy_menu_dropdown" id="dropdown_category_04">
+                  <a href="">Smart Assistants & Hubs</a>
+                  <a href="">Smart Home Security</a>
+                  <a href="">Smart Energy & Lighting</a>
+                  <a href="">Pet Tech</a>
+                </div>
+              </div>
+
+              <div class="marketpy_btn_menu_light" href="#" onclick="toggleDiv('dropdown_category_05')">
+                <i class="fi fi-rr-database"></i>
+                Computers
+                <i class="fi fi-rr-angle-small-down"></i>
+
+                <div class="marketpy_menu_dropdown" id="dropdown_category_05">
+                  <a href="">Laptops</a>
+                  <a href="">Chromebook</a>
+                  <a href="">Windows Laptops</a>
+                  <a href="">PC Gaming</a>
+                  <a href="">Walmart Restored Computers</a>
+                  <a href="">Desktops</a>
+                  <a href="">Printers & Ink</a>
+                  <a href="">Monitors</a>
+                  <a href="">Networking</a>
+                  <a href="">Computer Accessories</a>
+                  <a href="">Computer Components</a>
+                  <a href="">Computer Software</a>
+                  <a href="">PC Finder</a>
+                </div>
+              </div>
+
+              <div class="marketpy_btn_menu_light" href="#" onclick="toggleDiv('dropdown_category_06')">
+                <i class="fi fi-rr-tablet"></i>
+                Tablets
+                <i class="fi fi-rr-angle-small-down"></i>
+
+                <div class="marketpy_menu_dropdown" id="dropdown_category_06">
+                  <a href="">iPad</a>
+                  <a href="">Android Tablets</a>
+                  <a href="">Restored Tablets</a>
+                  <a href="">Kobo eReaders</a>
+                  <a href="">Tablet Accessories</a>
+                </div>
+              </div>
+
+              <div class="marketpy_btn_menu_light" href="#" onclick="toggleDiv('dropdown_category_07')">
+                <i class="fi fi-rr-smartphone"></i>
+                Cell Phones
+                <i class="fi fi-rr-angle-small-down"></i>
+
+                <div class="marketpy_menu_dropdown" id="dropdown_category_07">
+                  <a href="">iPhone</a>
+                  <a href="">Samsung Galaxy Phones</a>
+                  <a href="">5G Phones</a>
+                  <a href="">Unlocked Phones</a>
+                  <a href="">Prepaid Phones & Plans</a>
+                  <a href="">Cell Phone Accessories</a>
+                  <a href="">Straight Talk</a>
+                  <a href="">AT&T</a>
+                  <a href="">Verizon</a>
+                  <a href="">Wearable Technology</a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     
@@ -145,7 +267,7 @@
         currentDivId = null;
         setTimeout(function() {
           div.style.display = 'none';
-        }, 500);
+        }, 200);
       }
     }
   
@@ -156,7 +278,7 @@
         currentDiv.classList.add('fade-out');
         setTimeout(function() {
           currentDiv.style.display = 'none';
-        }, 500);
+        }, 200);
         currentDivId = null;
       }
     }
