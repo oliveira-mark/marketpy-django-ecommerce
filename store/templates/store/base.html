@@ -9,25 +9,22 @@
     <title>{% block title %}MarketPy{% endblock %}</title>
     <link rel="shortcut icon" href="./assets/img/favicon.png" type="image/x-icon">
     <meta name="theme-color" content="#ffffff" />
-    <meta name="description" content="Nome da Empresa - Slogan / Tagline" />
-    <meta name="author" content="Agência WDK" />
+    <meta name="description" content="" />
+    <meta name="author" content="@oliveira-mark" />
 
     <link rel="stylesheet" type="text/css" href="{% static 'webfonts/uicons-regular-rounded.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'css/global.css' %}">
 
  </head>
   <body>
+
     {% include 'store/global/components/header.html' %}
       
     <main onclick="hideCurrentDiv()">
-      <div class="marketpy_container">
-        {% block content %}
-        {% endblock %}
-      </div>
+        {% block content %} {% endblock %}
     </main>
-      
-      <footer>
-        <p>&copy; 2023 MarketPy.</p>
-      </footer>
+
+    {% include 'store/global/components/footer.html' %}
+
   </body>
 </html>

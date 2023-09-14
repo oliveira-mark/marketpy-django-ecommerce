@@ -8,14 +8,14 @@ header {
 }
 .marketpy_topbar {
   background: #3fefc2;
-  padding: 15px 5px;
+  padding: 12px 5px;
 
   h6 {
     margin: 0px;
     text-align: center;
     font-weight: 400;
     color: #111111;
-    font-size: 16px;
+    font-size: 15px;
   }
 }
 .marketpy_feature_menu {
@@ -184,14 +184,19 @@ header {
 
 .marketpy_category_menu {
   background-color: #fff;
-  padding: 10px 0;
   border-bottom: 1px #f6f6f6 solid;
 
   .marketpy_container {
 
     .marketpy_row {
       align-items: center;
+
+      .marketpy_col_lg_12 {
+        display: flex;
+        justify-content: center;
+      }
     }
+    
   }
 
   .marketpy_btn_menu_light {
@@ -200,9 +205,7 @@ header {
     border: 2px #ffffff solid;
     text-align: center;
     padding: 10px 20px 15px 20px;
-    margin: 5px;
     font-size: 15px;
-    border-radius: 4px;
     color: #111111;
     font-weight: 600;
     display: inline-block;
@@ -212,7 +215,7 @@ header {
     z-index: 8;
 
     &:hover {
-      border: 2px #3fefc2 solid;
+      border: 2px #f1fffb solid;
       background-color: #f1fffb;
     }
 
