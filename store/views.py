@@ -8,4 +8,5 @@ def product_list(request):
 
 def product_detail(request, slug):
     product = get_object_or_404(Product, slug=slug)
-    return render(request, 'store/product/pages/product.html', {'product': product})
+    title_page = product.name
+    return render(request, 'store/product/pages/product.html', {'product': product, 'title_page': title_page})
