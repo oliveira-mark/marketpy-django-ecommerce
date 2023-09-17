@@ -1,0 +1,102 @@
+<div class="product_carousel">
+  <div class="product_thumbs">
+    <div class="column">
+      <img class="demo cursor" src="{{ product.image.url }}" alt="{{ product.name }}" style="width:100%" onclick="currentSlide(1)" draggable="false">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="{{ product.image.url }}" alt="{{ product.name }}" style="width:100%" onclick="currentSlide(2)" draggable="false">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="{{ product.image.url }}" alt="{{ product.name }}" style="width:100%" onclick="currentSlide(3)" draggable="false">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="{{ product.image.url }}" alt="{{ product.name }}" style="width:100%" onclick="currentSlide(4)" draggable="false">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="{{ product.image.url }}" alt="{{ product.name }}" style="width:100%" onclick="currentSlide(5)" draggable="false">
+    </div>    
+    <div class="column">
+      <img class="demo cursor" src="{{ product.image.url }}" alt="{{ product.name }}" style="width:100%" onclick="currentSlide(6)" draggable="false">
+    </div>
+  </div>
+
+  <div class="product_imgs">
+    <div class="mySlides">
+      <img src="{{ product.image.url }}" alt="{{ product.name }}" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <img src="{{ product.image.url }}" alt="{{ product.name }}" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <img src="{{ product.image.url }}" alt="{{ product.name }}" style="width:100%">
+    </div>    
+    <div class="mySlides">
+      <img src="{{ product.image.url }}" alt="{{ product.name }}" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <img src="{{ product.image.url }}" alt="{{ product.name }}" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <img src="{{ product.image.url }}" alt="{{ product.name }}" style="width:100%">
+    </div>    
+    <a class="prev" onclick="plusSlides(-1)"><i class="fi fi-rr-angle-small-left"></i></a>
+    <a class="next" onclick="plusSlides(1)"><i class="fi fi-rr-angle-small-right"></i></a>
+  </div>
+</div>
+
+<script>
+  let slideIndex = 1;
+  showSlides(slideIndex);
+  
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+  
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+  
+  function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("demo");
+
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+  }
+
+
+const scrollableDivs = document.querySelectorAll('.product_thumbs');
+
+scrollableDivs.forEach((div) => {
+    let isDragging = false;
+    let startY;
+    let scrollTop;
+
+    div.addEventListener('mousedown', (e) => {
+        isDragging = true;
+        startY = e.clientY;
+        scrollTop = div.scrollTop;
+    });
+
+    window.addEventListener('mousemove', (e) => {
+        if (!isDragging) return;
+
+        const deltaY = e.clientY - startY;
+        div.scrollTop = scrollTop - deltaY;
+    });
+
+    window.addEventListener('mouseup', () => {
+        isDragging = false;
+    });
+});
+
+</script>

@@ -5,7 +5,7 @@ class Product(models.Model):
     slug = models.SlugField(unique=True, default='')
     price = models.DecimalField(max_digits=10, decimal_places=2)
     description = models.TextField()
-    image = models.ImageField(upload_to='products/')
+    image = models.ImageField(upload_to='products/', default='')
     
 
     def __str__(self):
