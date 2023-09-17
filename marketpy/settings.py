@@ -21,6 +21,7 @@ INSTALLED_APPS = [
     'product',
     'django_sass',
     'store',
+    'user_account',
 ]
 
 MIDDLEWARE = [
