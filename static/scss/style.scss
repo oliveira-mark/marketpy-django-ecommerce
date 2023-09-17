@@ -321,3 +321,17 @@
     text-align: justify;
   }
 }
+
+
+footer {
+  text-align: center;
+  border-top: 1px #f6f6f6 solid;
+  padding: 10px 0;
+
+  p {
+    font-size: 14px;
+  }
+  a {
+    color: #111;
+  }
+}
