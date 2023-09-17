@@ -229,9 +229,78 @@
     font-size: 1.4em;
     margin: 0;
     font-weight: 600;
+    color: #111;
   }
   p {
     font-weight: 300;
     font-size: 14px;
+  }
+  h6 {
+    font-size: 45px;
+    margin: 25px 0;
+    color: #111;
+
+    sub, sup {
+      font-size: 55%;
+    }
+    sup {
+      top: -0.4em;
+    }
+    sub {
+      bottom: 0;
+    }
+  }
+}
+
+.marketpy_btn_solid {
+  text-decoration: none;
+  background-color: #3fefc2;
+  text-align: center;
+  padding: 18px 30px 18px 30px;
+  margin: 5px;
+  font-size: 15px;
+  border-radius: 4px;
+  color: #111111;
+  font-weight: 700;
+  display: inline-block;
+  transition: 0.3s ease-in-out;
+  position: relative;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.01);
+    background-color: #2dddb1;
+  }
+
+  i {
+    position: relative;
+    bottom: -3px;
+    font-size: 20px;
+  }
+}
+.marketpy_btn_light {
+  text-decoration: none;
+  background-color: #f1fffb;
+  border: 2px #f1fffb solid;
+  text-align: center;
+  padding: 18px 30px 18px 30px;
+  margin: 5px;
+  font-size: 15px;
+  border-radius: 4px;
+  color: #111111;
+  font-weight: 700;
+  display: inline-block;
+  transition: 0.3s ease-in-out;
+  position: relative;
+  cursor: pointer;
+
+  &:hover {
+    border: 2px #3fefc2 solid;
+    background-color: #f1fffb;
+  }
+  i {
+    position: relative;
+    bottom: -3px;
+    font-size: 20px;
   }
 }
