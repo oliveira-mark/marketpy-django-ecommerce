@@ -91,16 +91,18 @@
       transition: 0.3s ease;
       opacity: 0;
 
-      a:nth-child(1){
+      p:nth-child(1){
         flex: 0 0 85%;
         padding: 10px;
         text-transform: uppercase;
         font-weight: 700;
         color: #111;
+        margin: 0;
       }
-      a:nth-child(2){
+      p:nth-child(2){
         flex: 0 0 10%;
         padding: 10px;
+        margin: 0;
         
         i {
           color: #1adcac;
@@ -302,5 +304,20 @@
     position: relative;
     bottom: -3px;
     font-size: 20px;
+  }
+}
+
+.product_description {
+  margin: 50px 0;
+
+  h3 {
+    color: #111;
+  }
+  
+  p {
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    line-height: 1.3;
+    text-align: justify;
   }
 }
