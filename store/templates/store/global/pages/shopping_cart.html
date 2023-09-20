@@ -1,0 +1,35 @@
+{% extends 'store/base.html' %}
+
+{% load static %}
+
+{% block content %}
+
+  {% include 'store/global/components/title_header.html' %}
+
+<sectio id="shopping_cart">
+  <div class="marketpy_container">
+    <div class="marketpy_row">
+      <div class="marketpy_col_lg_8">
+        <div class="list_shopping">
+          <div class="card_shopping">
+            <img src="{% static 'img/img.png' %}" alt="Logotype MarketPy">
+            <div class="price">
+              <h5>T-shirt Caro Lines</h5>
+              <p>Price: <strong>$ 84.00</strong></p>
+            </div>
+            <div class="itens">
+              <button>-</button>
+              <input value="2" maxlength="19">
+              <button>+</button>
+            </div>
+            <div class="itens">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="marketpy_col_lg_4">
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}

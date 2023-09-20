@@ -335,3 +335,43 @@ footer {
     color: #111;
   }
 }
+
+#shopping_cart {
+
+  .list_shopping {
+
+    .card_shopping {
+      display: flex;
+      align-items: center;
+    }
+    
+    img {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 5px;
+      margin-right: 10px;
+    }
+    
+    .price {
+      h5 {
+        margin: 0 0 10px 0;
+        font-size: 20px;
+      }
+      p {
+        margin: 0;
+      }
+    }
+
+    input {
+      width: 50px;
+      height: 50px;
+      padding: 9px;
+      border-radius: 5px;
+      border: 2px #3fefc2 solid;
+      font-size: 16px;
+    }
+  }
+
+}
+

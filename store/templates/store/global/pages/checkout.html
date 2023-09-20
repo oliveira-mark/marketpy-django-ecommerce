@@ -1,0 +1,15 @@
+{% extends 'store/base.html' %}
+
+{% block content %}
+
+  {% include 'store/global/components/title_header.html' %}
+
+  <div class="marketpy_container">
+    <div class="marketpy_row">
+      {% for product in products %}
+          {% include 'store/product/components/product_card.html' %}
+      {% endfor %}
+    </div>
+  </div>
+  
+{% endblock %}
