@@ -16,7 +16,7 @@
     <link rel="stylesheet" type="text/css" href="{% static 'css/global.css' %}">
 
  </head>
-  <body>
+  <body class="{{ request.resolver_match.url_name }}">
 
     {% include 'store/global/components/header.html' %}
       

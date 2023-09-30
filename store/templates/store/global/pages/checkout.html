@@ -1,15 +1,116 @@
 {% extends 'store/base.html' %}
 
+{% load static %}
+
 {% block content %}
 
-  {% include 'store/global/components/title_header.html' %}
+{% include 'store/global/components/title_header.html' %}
 
+<section id="checkout">
   <div class="marketpy_container">
     <div class="marketpy_row">
-      {% for product in products %}
-          {% include 'store/product/components/product_card.html' %}
-      {% endfor %}
+      <div class="marketpy_col_lg_8">
+        <div class="billing">
+          <form>
+            <h5>Billing details</h5>
+
+            <label for="name">
+              First & last name
+              <input id="name" name="name" type="text" placeholder="Type your name....">
+            </label>
+
+            <label for="email">
+              Email address
+              <input id="name" name="name" type="text" placeholder="Type your email...">
+            </label>
+
+            <label for="country">
+              Country
+              <select id="country" name="country">
+                <option>Select your country</option>
+                <option>United States of America</option>
+                <option>Brazil</option>
+              </select>
+            </label>
+
+            <label for="state">
+              State / County
+              <input id="state" name="state" type="text" placeholder="Type your state / county...">
+            </label>
+
+            <label for="zip">
+              Zip / postal code
+              <input id="zip" name="zip" type="text" placeholder="Type your zip code...">
+            </label>
+            
+
+            <h5>Payment method</h5>
+
+            <label for="card">
+              Card number
+              <input id="card" name="card" type="text" placeholder="Type your card number....">
+            </label>
+
+            <label for="expiration">
+              <span>Expiration date</span>
+              <select id="month" name="month">
+                <option>Select month</option>
+                <option>01</option>
+                <option>02</option>
+                <option>03</option>
+                <option>04</option>
+                <option>05</option>
+                <option>06</option>
+                <option>07</option>
+                <option>08</option>
+                <option>09</option>
+                <option>10</option>
+                <option>11</option>
+                <option>12</option>
+              </select>
+              
+              <select id="year" name="year">
+                <option>Select year</option>
+                <option>2023</option>
+                <option>2024</option>
+                <option>2025</option>
+                <option>2026</option>
+                <option>2027</option>
+                <option>2028</option>
+                <option>2029</option>
+                <option>2030</option>
+              </select>
+            </label>
+
+            <label for="security">
+              Security code
+              <input id="security" name="security" type="text" placeholder="Type your security code....">
+            </label>
+            
+            <p>By clicking the button, you agree to the <a href="">Terms and Conditions</a></p>
+            <a href="#" class="marketpy_btn_solid">Place Order</a>
+
+
+          </form>
+        </div>
+      </div>
+      <div class="marketpy_col_lg_4">
+        <div class="summary_cart">
+          <div class="header_summary">
+            <h5>Summary Cart</h5>
+          </div>
+          <hr>
+          <div class="body_summary">
+            <p><strong>Subtotal</strong><span>$670</span></p>
+            <p><strong>Shipping</strong><span>$5</span></p>
+          </div>
+          <div class="footer_summary">
+            <h6>Total <span>$675.00</span></h6>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
-  
+</section>
+
 {% endblock %}
