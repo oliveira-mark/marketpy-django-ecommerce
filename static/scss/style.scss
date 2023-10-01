@@ -554,3 +554,49 @@ footer {
     }
   }
 }
+
+#support {
+  margin-bottom: 100px;
+  
+  .support_accordion {
+    background-color: #fff;
+    color: #111;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    outline: none;
+    transition: 0.4s;
+    border: 2px #3fefc2 solid;
+    border-radius: 4px;
+    margin: 5px 0;
+  }
+  
+  .support_active, .support_accordion:hover {
+    background-color: #f1fffb;
+  }
+  
+  .support_accordion:after {
+    content: '\002B';
+    color: #111;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .support_active:after {
+    content: "\2212";
+  }
+  
+  .support_panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    margin: 0;
+    line-height: 1.4;
+    font-weight: 300;
+    font-size: 15px;
+  }
+}

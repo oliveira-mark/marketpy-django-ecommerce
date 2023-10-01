@@ -8,4 +8,5 @@ urlpatterns = [
     path('products/<slug:slug>/', views.product_detail, name='product_detail'),
     path('shopping-cart/', views.shopping_cart, name='shopping_cart'),
     path('checkout/', views.checkout, name='checkout'),
+    path('support/', views.support, name='support'),
 ]

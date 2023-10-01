@@ -20,3 +20,7 @@ def shopping_cart(request):
     products = Product.objects.all()
     title_page = "Shopping Cart"
     return render(request, 'store/global/pages/shopping_cart.html', {'products': products, 'title_page': title_page})
+
+def support(request):
+    title_page = "Support"
+    return render(request, 'store/global/pages/support.html', {'title_page': title_page})
