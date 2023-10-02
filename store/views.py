@@ -24,3 +24,7 @@ def shopping_cart(request):
 def support(request):
     title_page = "Support"
     return render(request, 'store/global/pages/support.html', {'title_page': title_page})
+
+def my_profile(request):
+    title_page = "My Profile"
+    return render(request, 'store/user-account/pages/profile.html', {'title_page': title_page})
