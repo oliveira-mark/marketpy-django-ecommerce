@@ -698,35 +698,129 @@ footer {
       }
     }
   }
-
   .box_purchased {
-    display: flex;
-    justify-content: space-around;
+    display: inline-flex;
+    max-width: 500px;
+    width: 100%;
+    border: 2px #3fefc2 solid;
+    border-radius: 5px;
+    padding: 15px;
+    gap: 15px;
+    margin: 10px;
 
     .item_mosaic{
       display: flex;
       flex-wrap: wrap;
-      width: 150px;
+      width: 100px;
 
       img {
-        width: 70px;
-        height: 70px;
+        width: 45px;
+        height: 45px;
         display: inline;
         object-fit: cover;
         margin: 1% 1%;
+        border-radius: 3px;
       }
       span {
-        width: 70px;
-        height: 70px;
+        width: 45px;
+        height: 45px;
         display: flex;
         align-items: center;
         justify-content: center;
         margin: 1% 1%;
+        background-color: rgba(217, 217, 217, 0.27);
+        border-radius: 3px;
   
         i {
           font-size: 24px;
+          color: #d9d9d9;
         }
       }
+    }
+
+    .item_details{
+      flex-basis: calc(100% - 100px);
+      p {
+        margin: 0;
+        font-size: 12px;
+        display: inline-block;
+        color: #707070;
+        padding-right: 10px;
+        margin-bottom: 5px;
+
+        strong{
+          font-weight: 500;
+        }
+      }
+      h4 {
+        margin: 5px 0;
+        color: #111;
+      }
+      a {
+        display: inline-block;
+        font-size: 12px;
+        font-weight: 500;
+        color: #00ad81;
+        margin-right: 10px;
+
+        i{
+          color: #111;
+        }
+      }
+    }
+    
+  }
+
+  form.account_settings {
+    display: flex;
+    flex-wrap: wrap;
+
+    label {
+      width: 100%;
+      display: block;
+      font-size: 14px;
+      color: #111;
+
+      input {
+        width: 100%;
+        padding: 12px;
+        border: 1px rgba(17, 17, 17, 0.15) solid;
+        box-shadow: 0px 1px 1px rgba(17, 17, 17, 0.15);
+        border-radius: 5px;
+        margin: 5px 0 15px 0;
+      }
+      select {
+        width: 100%;
+        padding: 12px;
+        border: 1px rgba(17, 17, 17, 0.15) solid;
+        box-shadow: 0px 1px 1px rgba(17, 17, 17, 0.15);
+        border-radius: 5px;
+        margin: 5px 0 15px 0;
+        -webkit-appearance: none;
+      }
+    }
+    label[for="state"] {
+      width: 49%;
+      margin-right: 2%;
+    }
+    label[for="zip"] {
+      width: 49%;
+    }
+    label[for="expiration"] {
+      width: 49%;
+      margin-right: 2%;
+
+      span{
+        width: 100%;
+        display: block;
+      }
+      select{
+        width: 48%;
+        margin-right: 1%;
+      }
+    }
+    label[for="security"] {
+      width: 49%;
     }
   }
   
