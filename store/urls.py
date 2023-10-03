@@ -11,4 +11,6 @@ urlpatterns = [
     path('support/', views.support, name='support'),
     path('my-profile/', views.my_profile, name='my_profile'),
     path('my-purchases/', views.my_purchases, name='my_purchases'),
+    path('wishlist/', views.wishlist, name='wishlist'),
+    path('account_settings/', views.account_settings, name='account_settings'),
 ]
