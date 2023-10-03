@@ -28,3 +28,7 @@ def support(request):
 def my_profile(request):
     title_page = "My Profile"
     return render(request, 'store/user-account/pages/profile.html', {'title_page': title_page})
+
+def my_purchases(request):
+    title_page = "My Purchases"
+    return render(request, 'store/user-account/pages/my_purchases.html', {'title_page': title_page})

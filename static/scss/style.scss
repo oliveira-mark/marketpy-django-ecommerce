@@ -606,7 +606,8 @@ footer {
 }
 
 #profile {
-  
+  margin-bottom: 100px;
+
   .menu_profile{
 
     a {
@@ -697,4 +698,36 @@ footer {
       }
     }
   }
+
+  .box_purchased {
+    display: flex;
+    justify-content: space-around;
+
+    .item_mosaic{
+      display: flex;
+      flex-wrap: wrap;
+      width: 150px;
+
+      img {
+        width: 70px;
+        height: 70px;
+        display: inline;
+        object-fit: cover;
+        margin: 1% 1%;
+      }
+      span {
+        width: 70px;
+        height: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 1% 1%;
+  
+        i {
+          font-size: 24px;
+        }
+      }
+    }
+  }
+  
 }
