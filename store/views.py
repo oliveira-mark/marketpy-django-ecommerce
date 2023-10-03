@@ -32,3 +32,12 @@ def my_profile(request):
 def my_purchases(request):
     title_page = "My Purchases"
     return render(request, 'store/user-account/pages/my_purchases.html', {'title_page': title_page})
+
+def wishlist(request):
+    products = Product.objects.all()
+    title_page = "Wishlist"
+    return render(request, 'store/user-account/pages/wishlist.html', {'products': products, 'title_page': title_page})
+
+def account_settings(request):
+    title_page = "Account Settings"
+    return render(request, 'store/user-account/pages/account_settings.html', {'title_page': title_page})
