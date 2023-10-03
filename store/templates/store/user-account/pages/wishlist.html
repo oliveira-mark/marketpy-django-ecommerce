@@ -1,0 +1,32 @@
+{% extends 'store/base.html' %}
+
+{% load static %}
+
+{% block content %}
+
+{% include 'store/global/components/title_header.html' %}
+
+<section id="profile">
+  <div class="marketpy_container">
+    <div class="marketpy_row">
+      <div class="marketpy_col_lg_3">
+        <div class="menu_profile">
+          <a href="">My Profile</a>
+          <a href="">My Purchases</a>
+          <a class="active" href="">Wishlist</a>
+          <a href="">Settings</a>
+          <a href="">Logout</a>
+        </div>
+      </div>
+      <div class="marketpy_col_lg_9">
+        <div class="marketpy_row">
+          {% for product in products %}
+            {% include 'store/product/components/product_card.html' %}
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock %}
