@@ -1,0 +1,61 @@
+{% extends 'store/base.html' %}
+
+{% load static %}
+
+{% block content %}
+
+{% include 'store/global/components/title_header.html' %}
+
+<section id="profile">
+  <div class="marketpy_container">
+    <div class="marketpy_row">
+      <div class="marketpy_col_lg_3">
+        <div class="menu_profile">
+          <a href="">My Profile</a>
+          <a href="">My Purchases</a>
+          <a href="">Wishlist</a>
+          <a class="active" href="">Settings</a>
+          <a href="">Logout</a>
+        </div>
+      </div>
+      <div class="marketpy_col_lg_9">
+        <form class="account_settings">
+          <label for="name">
+            First & last name
+            <input id="name" name="name" type="text" placeholder="Type your name...." value="Marcos Oliveira">
+          </label>
+
+          <label for="email">
+            Email address
+            <input id="name" name="name" type="text" placeholder="Type your email..." value="hey@mrk.contact">
+          </label>
+
+          <label for="country">
+            Country
+            <select id="country" name="country">
+              <option>Select your country</option>
+              <option>United States of America</option>
+              <option selected>Brazil</option>
+            </select>
+          </label>
+
+          <label for="state">
+            State / County
+            <input id="state" name="state" type="text" placeholder="Type your state / county..." value="São Paulo">
+          </label>
+
+          <label for="zip">
+            Zip / postal code
+            <input id="zip" name="zip" type="text" placeholder="Type your zip code..."  value="01310-930">
+          </label>
+          
+          <a href="#" class="marketpy_btn_solid">Save Now</a>
+
+
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock %}
