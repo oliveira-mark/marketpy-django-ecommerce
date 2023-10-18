@@ -835,3 +835,21 @@ footer {
     padding: 0;
   }
 }
+
+#benefit_section {
+  padding: 10px 0;
+
+  .marketpy_col_lg_4 {
+    justify-content: center;
+    display: flex;
+  }
+
+  .benefit_inner {
+    display: inline-flex;
+    align-items: center;
+  
+    span {
+      margin: 10px;
+    }
+  }
+}
