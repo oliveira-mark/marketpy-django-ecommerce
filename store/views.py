@@ -41,3 +41,7 @@ def wishlist(request):
 def account_settings(request):
     title_page = "Account Settings"
     return render(request, 'store/user-account/pages/account_settings.html', {'title_page': title_page})
+
+def home(request):
+    title_page = "Home"
+    return render(request, 'store/global/pages/home.html', {'title_page': title_page})
