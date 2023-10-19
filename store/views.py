@@ -43,5 +43,6 @@ def account_settings(request):
     return render(request, 'store/user-account/pages/account_settings.html', {'title_page': title_page})
 
 def home(request):
+    products = Product.objects.all()
     title_page = "Home"
-    return render(request, 'store/global/pages/home.html', {'title_page': title_page})
+    return render(request, 'store/global/pages/home.html', {'products': products, 'title_page': title_page})

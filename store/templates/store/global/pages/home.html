@@ -52,6 +52,21 @@
   </div>
 </section>
 
+<section id="products_list_home">
+  <div class="marketpy_container">
+    <div class="marketpy_row">
+      <div class="marketpy_col_lg_12">
+        <h2>Products on Sale</h2>
+      </div>
+    </div>
+    <div class="marketpy_row">
+      {% for product in products %}
+        {% include 'store/product/components/product_card.html' %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
 <section id="video_home">
   <div class="marketpy_container">
     <div class="marketpy_row">
