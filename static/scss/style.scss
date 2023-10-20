@@ -878,3 +878,22 @@ footer {
     margin-top: 25px;
   }
 }
+
+#customer_testimonials {
+  padding: 50px 0;
+
+  .box_testimonials {
+    display: flex;
+  }
+  .itens_testimonials {
+    padding: 15px;
+
+  p {
+      margin-bottom: 5px;
+  }
+  h6 {
+    margin-top: 0;
+    font-size: 15px;
+  }
+  }
+}
