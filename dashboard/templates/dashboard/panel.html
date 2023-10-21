@@ -1,0 +1,32 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{{ title_page }} - MarketPy</title>
+    <link rel="shortcut icon" href="{% static 'img/favicon.png' %}" type="image/x-icon">
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="description" content="" />
+    <meta name="author" content="@oliveira-mark" />
+    
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/dashboard.css' %}">
+
+ </head>
+  <body class="{{ request.resolver_match.url_name }}">
+
+    {% include 'dashboard/global/components/header.html' %}
+      
+    <main onclick="hideCurrentDiv()">
+        {% block content %} {% endblock %}
+    </main>
+
+    {% include 'dashboard/global/components/footer.html' %}
+
+    <script src="{% static 'js/dashboard.js' %}"></script>
+
+  </body>
+</html>

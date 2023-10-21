@@ -1,0 +1,93 @@
+/*  MarketPy project's main styles file  */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@700&display=swap');
+
+/*  importing the normalize  */
+@import 'normalize';
+
+@import 'layout';
+
+body, html{
+  font-family: 'Montserrat', sans-serif;
+  color: #A0AEC0;
+  background: #F8F9FA;
+}
+
+h1, h2, h3, h4, h5, h6, strong, a {
+  color: #2D3748;
+}
+
+i {
+  position: relative;
+  bottom: -1px;
+}
+
+.marketpy_menubar {
+  position: relative;
+  padding: 20px 0;
+
+  .marketpy_brand {
+    img {
+      max-width: 150px;
+      width: 100%;
+      object-fit: contain;
+    }
+    h6 {
+      font-family: 'Outfit', sans-serif;
+      font-weight: 700;
+      color: #111111;
+      font-size: 32px;
+      margin: 0;
+      span {
+        color: #3fefc2;
+      }
+    }
+  }
+
+  .marketpy_col_lg_8 {
+    display: flex;
+    justify-content: end;
+    gap: 15px;
+  }
+
+  a{
+    font-weight: 500;
+  }
+  p {
+    margin: 0px;
+    font-size: 12px;
+  }
+  h6 {
+    margin: 8px 0px 0px 0px;
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  form {
+    position: relative;
+
+    input {
+      padding: 10px 15px;
+      border-radius: 5px;
+      border: 1px #E2E8F0 solid;
+      font-size: 13px;
+    }
+
+    button {
+      position: absolute;
+      right: 0px;
+      top: 0px;
+      bottom: 0px;
+      border: none;
+      background-color: transparent;
+      padding: 12px;
+    }
+  }
+  button {
+    border: none;
+    background-color: transparent;
+    padding: 10px 0;
+    font-weight: 600;
+    font-size: 14px;
+  }
+}
